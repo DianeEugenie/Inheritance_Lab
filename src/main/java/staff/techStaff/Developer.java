@@ -7,4 +7,5 @@ public class Developer extends Employee {
     public Developer(String name, Integer niNumber, double salary) {
         super(name, niNumber, salary);
     }
+
 }
