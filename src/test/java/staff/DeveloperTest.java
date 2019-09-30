@@ -2,7 +2,7 @@ package staff;
 
 import org.junit.Before;
 import org.junit.Test;
-import staff.management.Manager;
+import staff.techStaff.Developer;
 
 import static org.junit.Assert.assertEquals;
 
@@ -17,17 +17,17 @@ public class DeveloperTest {
 
     @Test
     public void hasName() {
-        assertEquals("Kev", developer.getName());
+        assertEquals("Billy", developer.getName());
     }
 
     @Test
     public void hasNINumber() {
-        assertEquals(12345, developer.getNiNumber(), 0.01);
+        assertEquals(34567, developer.getNiNumber(), 0.01);
     }
 
     @Test
     public void hasSalary() {
-        assertEquals(35000.50, developer.getSalary(), 0.01);
+        assertEquals(20000, developer.getSalary(), 0.01);
     }
 
     @Test
