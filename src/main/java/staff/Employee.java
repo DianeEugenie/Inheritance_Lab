@@ -13,5 +13,23 @@ public class Employee {
         this.salary = salary;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public Integer getNiNumber() {
+        return niNumber;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void raiseSalary(double raise){
+        this.salary += raise;
+    }
+
+    public double payBonus(){
+        return this.salary * 0.01;
+    }
 }
