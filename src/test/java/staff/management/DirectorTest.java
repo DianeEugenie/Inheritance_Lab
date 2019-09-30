@@ -53,7 +53,7 @@ public class DirectorTest {
         //WHEN
         director.payBonus();
         //THEN
-        assertEquals(800, director.payBonus(), 0.01);
+        assertEquals(1600, director.payBonus(), 0.01);
     }
 
 
