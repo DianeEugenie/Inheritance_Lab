@@ -1,10 +1,10 @@
-package staff;
-
-public class DatabaseAdminTest {
-
-    DatabaseAdmin databaseAdmin;
-
-    @Before
-
-
-}
+//package staff;
+//
+//public class DatabaseAdminTest {
+//
+//    DatabaseAdmin databaseAdmin;
+//
+//    @Before
+//
+//
+//}
