@@ -45,6 +45,14 @@ public class ManagerTest {
     }
 
     @Test
+    public void canRaiseSalary_NotIfNegative(){
+        //WHEN user types in negative
+        manager.raiseSalary(-100);
+        //THEN salary should not have gone up
+        assertEquals(35000.50, manager.getSalary(), 0.01);
+    }
+
+    @Test
     public void canPayBonus(){
         //WHEN
         manager.payBonus();

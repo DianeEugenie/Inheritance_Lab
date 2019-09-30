@@ -39,6 +39,15 @@ public class DatabaseAdminTest {
     }
 
     @Test
+    public void canRaiseSalary_NotIfNegative(){
+        //WHEN user types in negative
+        databaseAdmin.raiseSalary(-100);
+        //THEN salary should not have gone up
+        assertEquals(18000, databaseAdmin.getSalary(), 0.01);
+
+    }
+
+    @Test
     public void canPayBonus(){
         //WHEN
         databaseAdmin.payBonus();

@@ -39,6 +39,15 @@ public class DeveloperTest {
     }
 
     @Test
+    public void canRaiseSalary_NotIfNegative(){
+        //WHEN user types in negative
+        developer.raiseSalary(-100);
+        //THEN salary should not have gone up
+        assertEquals(20000, developer.getSalary(), 0.01);
+
+    }
+
+    @Test
     public void canPayBonus(){
         //WHEN
         developer.payBonus();
