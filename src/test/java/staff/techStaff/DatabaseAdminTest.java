@@ -55,5 +55,21 @@ public class DatabaseAdminTest {
         assertEquals(180, databaseAdmin.payBonus(), 0.01);
     }
 
+    @Test
+    public void canChangeName(){
+        //WHEN we change the name
+        databaseAdmin.setName("Kyle");
+        //THEN
+        assertEquals("Kyle", databaseAdmin.getName());
+    }
+
+    @Test
+    public void canChangeName_NotIfNull(){
+        //WHEN we change the name
+        databaseAdmin.setName("");
+        //THEN
+        assertEquals("Martin", databaseAdmin.getName());
+    }
+
 
 }

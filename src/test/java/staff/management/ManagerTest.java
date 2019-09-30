@@ -60,4 +60,20 @@ public class ManagerTest {
         assertEquals(350, manager.payBonus(), 0.01);
     }
 
+    @Test
+    public void canChangeName(){
+        //WHEN we change the name
+        manager.setName("Kyle");
+        //THEN
+        assertEquals("Kyle", manager.getName());
+    }
+
+    @Test
+    public void canChangeName_NotIfNull(){
+        //WHEN we change the name
+        manager.setName("");
+        //THEN
+        assertEquals("Kev", manager.getName());
+    }
+
 }

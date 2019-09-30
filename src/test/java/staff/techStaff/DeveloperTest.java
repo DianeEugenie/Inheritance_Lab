@@ -54,4 +54,20 @@ public class DeveloperTest {
         //THEN
         assertEquals(200, developer.payBonus(), 0.01);
     }
+
+    @Test
+    public void canChangeName(){
+        //WHEN we change the name
+        developer.setName("Kyle");
+        //THEN
+        assertEquals("Kyle", developer.getName());
+    }
+
+    @Test
+    public void canChangeName_NotIfNull(){
+        //WHEN we change the name
+        developer.setName("");
+        //THEN
+        assertEquals("Billy", developer.getName());
+    }
 }
