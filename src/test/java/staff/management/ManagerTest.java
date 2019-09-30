@@ -1,4 +1,4 @@
-package staff;
+package staff.management;
 
 import org.junit.Before;
 import org.junit.Test;
