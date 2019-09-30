@@ -12,7 +12,7 @@ public class DirectorTest {
 
     @Before
     public void before() {
-        director = new Director("Gillian", 45678, 80000, "All Departments", 1250000);
+        director = new Director("Gillian", "CC41114G", 80000, "All Departments", 1250000);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class DirectorTest {
 
     @Test
     public void hasNINumber() {
-        assertEquals(45678, director.getNiNumber(), 0.01);
+        assertEquals("CC41114G", director.getNiNumber());
     }
 
     @Test

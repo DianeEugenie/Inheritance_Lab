@@ -12,7 +12,7 @@ public class DeveloperTest {
 
     @Before
     public void before() {
-        developer = new Developer("Billy", 34567, 20000);
+        developer = new Developer("Billy", "CC31114G", 20000);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class DeveloperTest {
 
     @Test
     public void hasNINumber() {
-        assertEquals(34567, developer.getNiNumber(), 0.01);
+        assertEquals("CC31114G", developer.getNiNumber());
     }
 
     @Test

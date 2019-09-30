@@ -12,7 +12,7 @@ public class DatabaseAdminTest {
 
     @Before
     public void before() {
-        databaseAdmin = new DatabaseAdmin("Martin", 98765, 18000);
+        databaseAdmin = new DatabaseAdmin("Martin", "CC21114G", 18000);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class DatabaseAdminTest {
 
     @Test
     public void hasNINumber() {
-        assertEquals(98765, databaseAdmin.getNiNumber(), 0.01);
+        assertEquals("CC21114G", databaseAdmin.getNiNumber());
     }
 
     @Test

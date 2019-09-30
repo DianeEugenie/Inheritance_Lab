@@ -13,7 +13,7 @@ public class ManagerTest {
 
     @Before
     public void before() {
-        manager = new Manager("Kev", 12345, 35000.50, "The Alphas");
+        manager = new Manager("Kev", "CC11114G", 35000.50, "The Alphas");
     }
 
     @Test
@@ -23,7 +23,7 @@ public class ManagerTest {
 
     @Test
     public void hasNINumber() {
-        assertEquals(12345, manager.getNiNumber(), 0.01);
+        assertEquals("CC11114G", manager.getNiNumber());
     }
 
     @Test
