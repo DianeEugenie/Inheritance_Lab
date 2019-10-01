@@ -1,8 +1,8 @@
-package staff.techStaff;
+package staff;
 
 import org.junit.Before;
 import org.junit.Test;
-import staff.techStaff.DatabaseAdmin;
+import techStaff.DatabaseAdmin;
 
 import static org.junit.Assert.assertEquals;
 
@@ -67,6 +67,7 @@ public class DatabaseAdminTest {
     public void canChangeName_NotIfNull(){
         //WHEN we change the name
         databaseAdmin.setName("");
+        databaseAdmin.setName(null);
         //THEN
         assertEquals("Martin", databaseAdmin.getName());
     }

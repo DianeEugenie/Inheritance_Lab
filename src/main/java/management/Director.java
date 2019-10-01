@@ -1,4 +1,4 @@
-package staff.management;
+package management;
 
 public class Director extends Manager {
 

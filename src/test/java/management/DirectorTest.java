@@ -1,5 +1,6 @@
-package staff.management;
+package management;
 
+import management.Director;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -77,6 +78,7 @@ public class DirectorTest {
     public void canChangeName_NotIfNull(){
         //WHEN we change the name
         director.setName("");
+        director.setName(null);
         //THEN
         assertEquals("Gillian", director.getName());
     }

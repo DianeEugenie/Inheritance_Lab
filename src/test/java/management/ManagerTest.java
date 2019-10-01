@@ -1,8 +1,8 @@
-package staff.management;
+package management;
 
 import org.junit.Before;
 import org.junit.Test;
-import staff.management.Manager;
+import management.Manager;
 
 import static org.junit.Assert.assertEquals;
 
@@ -72,6 +72,7 @@ public class ManagerTest {
     public void canChangeName_NotIfNull(){
         //WHEN we change the name
         manager.setName("");
+        manager.setName(null);
         //THEN
         assertEquals("Kev", manager.getName());
     }

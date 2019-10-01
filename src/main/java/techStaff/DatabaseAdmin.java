@@ -1,4 +1,4 @@
-package staff.techStaff;
+package techStaff;
 
 import staff.Employee;
 
